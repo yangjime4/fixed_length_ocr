@@ -1,12 +1,12 @@
 from keras import Input, Model
 from keras.layers import Conv2D, MaxPooling2D, Dropout, Flatten, Dense
 
-IMAGE_HEIGHT = 32 - 8
-IMAGE_WIDTH = 94 - 8
+IMAGE_HEIGHT = 30
+IMAGE_WIDTH = 100
 # 验证码长度
-CAPTCHA_LEN = 4
+CAPTCHA_LEN = 7
 # 验证码种类个数（0123abc...etc）
-CAPTCHA_TYPE_NUM = 33
+CAPTCHA_TYPE_NUM = 10
 
 
 def build_model():
